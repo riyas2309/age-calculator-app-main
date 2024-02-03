@@ -89,3 +89,30 @@ h3 {
 .bottom-portion span {
   color: #872dfcff;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .bottom-portion {
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+  .top-portion input {
+    width: 80px;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+  button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+  }
+  button img {
+    transform: scale(70%);
+  }
+}

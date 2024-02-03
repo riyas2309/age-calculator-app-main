@@ -16,17 +16,23 @@
     <main class="container">
       <div class="top-portion">
         <div class="daycontainer inner">
-          <h3>Day</h3>
-          <input type="number" name="Day" id="day" placeholder="DD" />
+          <h3 class="heading-day">Day</h3>
+          <input type="number" name="Day" id="day" placeholder="DD" min="1" />
           <small class="error-day"></small>
         </div>
         <div class="monthcontainer inner">
-          <h3>Month</h3>
-          <input type="number" name="Month" id="month" placeholder="MM" />
+          <h3 class="heading-month">Month</h3>
+          <input
+            type="number"
+            name="Month"
+            id="month"
+            placeholder="MM"
+            min="1"
+          />
           <small class="error-month"></small>
         </div>
         <div class="yearcontainer inner">
-          <h3>Year</h3>
+          <h3 class="heading-year">Year</h3>
           <input type="number" name="year" id="year" placeholder="YYYY" />
           <small class="error-year"></small>
         </div>

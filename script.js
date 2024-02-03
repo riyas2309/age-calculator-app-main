@@ -1,6 +1,8 @@
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
-
+const myElement_d = document.querySelector(".heading-day");
+const myElement_m = document.querySelector(".heading-month");
+const myElement_y = document.querySelector(".heading-year");
 //select the input vlaues
 
 const input_day = document.querySelector("#day");
@@ -39,6 +41,7 @@ input_day.addEventListener("input", (e) => {
   if (+input_day.value === 0) {
     isvalid = false;
     error_day.textContent = "this field is required";
+    myElement_d.style.color = "hsl(0, 100%, 67%)";
     return;
   } else {
     error_day.textContent = "";
@@ -60,6 +63,8 @@ input_month.addEventListener("input", (e) => {
   if (+input_month.value === 0) {
     isvalid = false;
     error_month.textContent = "this field is required";
+    myElement_m.style.color = "hsl(0, 100%, 67%)";
+
     return;
   } else {
     error_month.textContent = "";
@@ -82,6 +87,7 @@ input_year.addEventListener("input", (e) => {
   if (+input_year.value === 0) {
     isvalid = false;
     error_year.textContent = "this field is required";
+    myElement_y.style.color = "hsl(0, 100%, 67%)";
     return;
   } else {
     error_year.textContent = "";
